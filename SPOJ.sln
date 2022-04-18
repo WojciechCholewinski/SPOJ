@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTEST - Zadanie próbne", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNO_DOD - Proste dodawanie", "RNO_DOD - Proste dodawanie\RNO_DOD - Proste dodawanie.csproj", "{87C47D59-39B2-4265-A9AC-1C373DCC44A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCTRL3 - Dwie cyfry silni", "FCTRL3 - Dwie cyfry silni\FCTRL3 - Dwie cyfry silni.csproj", "{F6DFE4E9-BBDB-4AE7-BE1D-A6808328E2FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{87C47D59-39B2-4265-A9AC-1C373DCC44A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87C47D59-39B2-4265-A9AC-1C373DCC44A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87C47D59-39B2-4265-A9AC-1C373DCC44A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DFE4E9-BBDB-4AE7-BE1D-A6808328E2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DFE4E9-BBDB-4AE7-BE1D-A6808328E2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DFE4E9-BBDB-4AE7-BE1D-A6808328E2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DFE4E9-BBDB-4AE7-BE1D-A6808328E2FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
