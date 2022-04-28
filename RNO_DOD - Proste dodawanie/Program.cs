@@ -13,20 +13,24 @@ namespace RNO_DOD___Proste_dodawanie
             int t; // ilość prób
             int n; //liczba liczb do dodania
             int wynik;
+            string ciągcyfr;
 
             t = int.Parse(Console.ReadLine());
             for (int i = 1; i <= t; i++)
             {
                 wynik = 0;
                 n = int.Parse(Console.ReadLine());
-                for (int j = 1; j <= n; j++)
+                ciągcyfr = Console.ReadLine();
+
+                string[] cyfry = ciągcyfr.Split(' ');
+                for (int j = 0; j < n; j++)
                 {
-                    int a = int.Parse(Console.ReadLine());
+                    int a = int.Parse(cyfry[j]);
                     wynik += a;
                 }
                 Console.WriteLine(wynik);
             }
         }
-        
+
     }
 }
