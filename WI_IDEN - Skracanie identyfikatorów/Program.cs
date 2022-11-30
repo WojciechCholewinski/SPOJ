@@ -13,6 +13,8 @@ for (int i = 0; i < testy; i++)
     Console.Write("Teskt któy będzie podlegać skracaniu: ");
     string name = Console.ReadLine();
 
+    string namepoczątkowy = name;
+
     int dlugosc = name.Length;
 
     if (dlugosc <= max)
@@ -22,6 +24,14 @@ for (int i = 0; i < testy; i++)
     }
     else
     {
+
+        //TODO: odwórcić kolejność znaków w tablicy name tzn z 012345 na 543210, następnie poiterować foreach-em a w środku usuwać "_" i po każdym usunięciu sprawdzać if-em czy Lenght nie jest już równa zmiennej max. Jeśli tak, to w if-ie umieścić break lub contineu?. Jeśli nieto iść do if else-a odejmującego cyfry. Co ważne! usunąć sprawdzanie ifami ostatniego znaku bo to chyba nie o to chodzi w tym zadaniu jaki  jest stricte ostatni znak.
+        // usunąc wgl tego for-a wtedy bo wszytskie foreach-e zostaną po prostu w powyższym elsie.
+
+
+
+
+
         int nr = 1;
         for (int q = dlugosc; q > max; q--)
         {
@@ -37,20 +47,20 @@ for (int i = 0; i < testy; i++)
                 }
                 char[] charsToTrim = { '_' };
                 name = name.TrimEnd(charsToTrim);
-            }//break or contunue
+            }
             else if (Char.IsDigit(name[name.Length - 1]))
             //name[name.Length - 1] == '_')
             {
-                if (name[name.Length - 1]== name[name.Length - 2])
+                if (name[name.Length - 1] == name[name.Length - 2])
                 {
                     Console.WriteLine("takie same cyfry");
                     q--;
                 }
                 name = name.TrimEnd(name[name.Length - 1]);
             }
-            else if (name.First() == 'a' || name.First() == 'e' || name.First() == 'i' || name.First() == 'o' || name.First() == 'u' || name.First() == 'y' || name.First() == 'ę' || name.First() == 'ą')
+            else if (name.First() == 'a' || name.First() == 'e' || name.First() == 'i' || name.First() == 'o' || name.First() == 'u' || name.First() == 'y' || name.First() == 'ę' || name.First() == 'ą' || name.First() == 'A' || name.First() == 'E' || name.First() == 'I' || name.First() == 'O' || name.First() == 'U' || name.First() == 'Y' || name.First() == 'Ę' || name.First() == 'Ą')
             {
-                char[] vowelsToTrim = { 'a', 'e', 'i', 'o', 'u', 'y', 'ę', 'ą' };
+                char[] vowelsToTrim = { 'a', 'e', 'i', 'o', 'u', 'y', 'ę', 'ą' , 'A', 'E', 'I', 'O', 'U', 'Y', 'Ę', 'Ą' };
                 if (vowelsToTrim.Contains(name[1]))
                 {
                     Console.WriteLine("takie same samogłoski");
@@ -60,20 +70,20 @@ for (int i = 0; i < testy; i++)
                 name.TrimStart(tmp);
                 //name = name.Remove(name.Length - 1);
 
-                
+
                 //Console.WriteLine(name.First());
                 name = name.TrimStart(vowelsToTrim);
                 name = tmp + name;
 
-                if (name.Length>max)
+                if (name.Length > max)
                 {
                     Console.WriteLine("przedosttania");
                     char tmp2 = name.Last();
                     name = name.TrimEnd(tmp2);
                     name = name.TrimEnd(name[name.Length - 1]);
                     name = name + tmp2;
-                    Console.WriteLine("name po trimie na spółgłoskach ostatnich "+name);
-                    Console.WriteLine("tmp2 "+tmp2);
+                    Console.WriteLine("name po trimie na spółgłoskach ostatnich " + name);
+                    Console.WriteLine("tmp2 " + tmp2);
                     q--;
                 }
             }
@@ -103,9 +113,30 @@ for (int i = 0; i < testy; i++)
 
 
         Console.WriteLine("---------");
+        Console.WriteLine("Początkowy: " + namepoczątkowy);
         Console.WriteLine("Ostateczny: " + wynik);
+        char[] tablicaname = namepoczątkowy.ToCharArray();
+        //for (int k = tablicaname.Length - 1; k >= 0; --k)
+        //{
+        //    Console.Write(tablicaname[k]);
+        //}
+        Console.WriteLine("-----");
+        Array.Reverse(tablicaname);
+        foreach (var item in tablicaname)
+        {
+            Console.Write(item);
+        }
+        Console.WriteLine("-----\n");
+        Array.Reverse(tablicaname);
+        foreach (var item in tablicaname)
+        {
+            Console.Write(item);
+        }
+
     }
+
 }
+
 //aeibgh1
 
 //|| name.Last()=='$'
