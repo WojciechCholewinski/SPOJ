@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCTRL3 - Dwie cyfry silni",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WI_IDEN - Skracanie identyfikatorów", "WI_IDEN - Skracanie identyfikatorów\WI_IDEN - Skracanie identyfikatorów.csproj", "{6D932175-CECD-4E95-94D0-A98A3E4915DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSR - Predkość średnia", "VSR - Predkość średnia\VSR - Predkość średnia.csproj", "{E4A904C7-0D17-4299-9238-4A757D31220F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VSR - Predkość średnia", "VSR - Predkość średnia\VSR - Predkość średnia.csproj", "{E4A904C7-0D17-4299-9238-4A757D31220F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTROL - ROL", "PTROL - ROL\PTROL - ROL.csproj", "{83ADF0E8-981F-483E-9288-27BAC4CF31E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E4A904C7-0D17-4299-9238-4A757D31220F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4A904C7-0D17-4299-9238-4A757D31220F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4A904C7-0D17-4299-9238-4A757D31220F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83ADF0E8-981F-483E-9288-27BAC4CF31E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83ADF0E8-981F-483E-9288-27BAC4CF31E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83ADF0E8-981F-483E-9288-27BAC4CF31E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83ADF0E8-981F-483E-9288-27BAC4CF31E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
